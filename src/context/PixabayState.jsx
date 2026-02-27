@@ -9,7 +9,7 @@ const PixabayState = (props) => {
   // (Debounce state)
   const [debouncedQuery, setDebouncedQuery] = useState(query);
 
-  const api_key = "46829746-ff95e31a062d390da1aadb868";
+  const api_key = import.meta.env.VITE_PIXABAY_KEY;
 
   //  (Debounce logic)
   useEffect(() => {
